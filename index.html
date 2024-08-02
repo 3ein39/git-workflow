@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Team Tasks</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-gray-200 text-gray-800 p-36">
+        <h1 class="text-4xl font-bold mb-4">Team Tasks</h1>
+        <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2"
+            onclick="openTask('habiba')"
+        >
+            Habiba's Task
+        </button>
+
+        <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2"
+            onclick="openTask('gehad')"
+        >
+            Gehad's Task
+        </button>
+        <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2"
+            onclick="openTask('samira')"
+        >
+            Samira's Task
+        </button>
+        <script>
+            function openTask(member) {
+                window.open(member + ".html", "_blank");
+            }
+        </script>
+    </body>
+</html>
